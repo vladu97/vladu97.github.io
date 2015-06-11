@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Minesweeper
+        </title>
+        <style>
+            html {
+                font-family: "Courier";
+            }
+            div {
+                text-align: center;
+                font-size: 40px;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+            canvas {
+                border: 1px solid black;
+                margin: auto;
+                display: block;
+            }
+            img {
+                display: none;
+            }
+            #timer {
+                text-align: center;
+                font-size: 120%;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="flag.png" alt='bomb' id='flag' />
+        <img src='bomb.jpg' alt='bomb' id='bomb' />
+        <img src='grey.jpg' alt='grey' id='grey' />
+        <img src='grey2.jpg' alt='grey2' id='grey2' />
+        
+        <div>Minesweeper</div>
+        <canvas width='500' height='500'/>
+        <script src='minesweeper.js'></script>
+        <script src="render.js"></script>
+    </body>
+</html>
